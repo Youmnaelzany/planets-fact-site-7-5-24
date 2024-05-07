@@ -1,0 +1,186 @@
+---
+import "@/styles/globals.css";
+---
+
+<header
+  class="relative my-4 flex items-center justify-between px-6 after:absolute after:-bottom-4 after:left-0 after:mx-0 after:h-[0.0625rem] after:w-full after:bg-[#fff] after:opacity-20 md:mt-8 md:flex-col md:justify-center md:gap-[2.44rem] md:pl-[3.19rem] md:pr-[3.31rem] md:text-center md:max-xl:mb-[1.69rem] xl:mt-[1.37rem] xl:flex-row xl:gap-[37.12rem] xl:pl-8 xl:pr-[2.56rem]"
+>
+  <div class="flex items-center justify-between gap-[12.12rem]">
+    <!-- LOGO -->
+    <a
+      href=""
+      class="font-Antonio text-[1.75rem] font-normal uppercase leading-normal tracking-[-0.06563rem] text-[#fff]"
+      >The Planets</a
+    >
+    <!-- HAMBURGER ICON -->
+    <img
+      src="/images/icon-hamburger.svg"
+      alt="openMenu"
+      class="md:max-2xl:hidden"
+      id="openMenu"
+    />
+  </div>
+  <!-- MOBILE MENU BAR -->
+  <nav
+    class="absolute left-0 top-[3.8rem] hidden h-[37.375rem] w-[23.4375rem] bg-[#070724] pl-6 pr-8 pt-[2.88rem]"
+    id="menuBar"
+  >
+    <ul class="flex flex-col gap-[2.56rem]">
+      <li
+        class="relative flex items-center after:absolute after:-bottom-5 after:h-[0.0625rem] after:w-[20.4375rem] after:bg-[#fff] after:opacity-10"
+      >
+        <div class="mr-[1.56rem] size-5 rounded-full bg-[#DEF4FC]"></div>
+        <a
+          href="/"
+          class="font-League Spartan flex items-center justify-between gap-[11.5rem] text-[0.9375rem] font-bold uppercase leading-[1.5625rem] tracking-[0.08525rem] text-[#fff]"
+          >mercury
+          <img src="/images/icon-chevron.svg" alt="" class="" />
+        </a>
+      </li>
+      <li
+        class="relative flex items-center after:absolute after:-bottom-5 after:h-[0.0625rem] after:w-[20.4375rem] after:bg-[#fff] after:opacity-10"
+      >
+        <div class="mr-[1.5rem] size-5 rounded-full bg-[#F7CC7F]"></div>
+        <a
+          href="/venus"
+          class="font-League Spartan flex items-center justify-between gap-[13.1rem] text-[0.9375rem] font-bold uppercase leading-[1.5625rem] tracking-[0.08525rem] text-[#fff]"
+          >venus
+          <img src="/images/icon-chevron.svg" alt="" class="" />
+        </a>
+      </li>
+      <li
+        class="relative flex items-center after:absolute after:-bottom-5 after:h-[0.0625rem] after:w-[20.4375rem] after:bg-[#fff] after:opacity-10"
+      >
+        <div class="mr-[1.5rem] size-5 rounded-full bg-[#545BFE]"></div>
+        <a
+          href="/earth"
+          class="font-League Spartan flex items-center justify-between gap-[13.13rem] text-[0.9375rem] font-bold uppercase leading-[1.5625rem] tracking-[0.08525rem] text-[#fff]"
+          >earth
+          <img src="/images/icon-chevron.svg" alt="" class="" />
+        </a>
+      </li>
+      <li
+        class="relative flex items-center after:absolute after:-bottom-5 after:h-[0.0625rem] after:w-[20.4375rem] after:bg-[#fff] after:opacity-10"
+      >
+        <div class="mr-[1.5rem] size-5 rounded-full bg-[#FF6A45]"></div>
+        <a
+          href="/mars"
+          class="font-League Spartan flex items-center justify-between gap-[13.56rem] text-[0.9375rem] font-bold uppercase leading-[1.5625rem] tracking-[0.08525rem] text-[#fff]"
+          >mars
+          <img src="/images/icon-chevron.svg" alt="" class="" />
+        </a>
+      </li>
+      <li
+        class="relative flex items-center after:absolute after:-bottom-5 after:h-[0.0625rem] after:w-[20.4375rem] after:bg-[#fff] after:opacity-10"
+      >
+        <div class="mr-[1.5rem] size-5 rounded-full bg-[#ECAD7A]"></div>
+        <a
+          href="/jupiter"
+          class="font-League Spartan flex items-center justify-between gap-[12.4rem] text-[0.9375rem] font-bold uppercase leading-[1.5625rem] tracking-[0.08525rem] text-[#fff]"
+          >jupiter
+          <img src="/images/icon-chevron.svg" alt="" class="" />
+        </a>
+      </li>
+      <li
+        class="relative flex items-center after:absolute after:-bottom-5 after:h-[0.0625rem] after:w-[20.4375rem] after:bg-[#fff] after:opacity-10"
+      >
+        <div class="mr-[1.5rem] size-5 rounded-full bg-[#FCCB6B]"></div>
+        <a
+          href="/saturn"
+          class="font-League Spartan flex items-center justify-between gap-[12.4rem] text-[0.9375rem] font-bold uppercase leading-[1.5625rem] tracking-[0.08525rem] text-[#fff]"
+          >saturn
+          <img src="/images/icon-chevron.svg" alt="" class="" />
+        </a>
+      </li>
+      <li
+        class="relative flex items-center after:absolute after:-bottom-5 after:h-[0.0625rem] after:w-[20.4375rem] after:bg-[#fff] after:opacity-10"
+      >
+        <div class="mr-[1.5rem] size-5 rounded-full bg-[#65F0D5]"></div>
+        <a
+          href="/uranus"
+          class="font-League Spartan flex items-center justify-between gap-[12.2rem] text-[0.9375rem] font-bold uppercase leading-[1.5625rem] tracking-[0.08525rem] text-[#fff]"
+          >uranus
+          <img src="/images/icon-chevron.svg" alt="" class="" />
+        </a>
+      </li>
+      <li class="flex items-center">
+        <div class="mr-[1.5rem] size-5 rounded-full bg-[#497EFA]"></div>
+        <a
+          href="/neptune"
+          class="font-League Spartan flex items-center justify-between gap-[11.7rem] text-[0.9375rem] font-bold uppercase leading-[1.5625rem] tracking-[0.08525rem] text-[#fff]"
+          >neptune
+          <img src="/images/icon-chevron.svg" alt="" class="" />
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- TABLET & DESKTOP MENU BAR -->
+  <nav class="hidden md:max-2xl:flex">
+    <ul class="flex items-center justify-between gap-[2.06rem]">
+      <li class="">
+        <a
+          href="/mercury"
+          class="font-League Spartan cursor-pointer text-[0.6875rem] font-bold uppercase leading-[1.5625rem] tracking-[0.0625rem] text-[#fff] transition-all duration-500 ease-linear xl:hover:relative xl:hover:before:absolute xl:hover:before:-left-2 xl:hover:before:top-[-2.125rem] xl:hover:before:h-1 xl:hover:before:w-[4.25rem] xl:hover:before:bg-[#419EBB]"
+          >mercury</a
+        >
+      </li>
+      <li class="">
+        <a
+          href="/venus"
+          class="font-League Spartan ransition-all cursor-pointer text-[0.6875rem] font-bold uppercase leading-[1.5625rem] tracking-[0.0625rem] text-[#fff] duration-500 ease-linear xl:hover:relative xl:hover:before:absolute xl:hover:before:-left-2 xl:hover:before:top-[-2.125rem] xl:hover:before:h-1 xl:hover:before:w-[4.25rem] xl:hover:before:bg-[#419EBB]"
+          >venus</a
+        >
+      </li>
+      <li class="">
+        <a
+          href="/earth"
+          class="font-League Spartan ransition-all cursor-pointer text-[0.6875rem] font-bold uppercase leading-[1.5625rem] tracking-[0.0625rem] text-[#fff] duration-500 ease-linear xl:hover:relative xl:hover:before:absolute xl:hover:before:-left-2 xl:hover:before:top-[-2.125rem] xl:hover:before:h-1 xl:hover:before:w-[4.25rem] xl:hover:before:bg-[#419EBB]"
+          >earth</a
+        >
+      </li>
+      <li class="">
+        <a
+          href="/mars"
+          class="font-League Spartan ransition-all cursor-pointer text-[0.6875rem] font-bold uppercase leading-[1.5625rem] tracking-[0.0625rem] text-[#fff] duration-500 ease-linear xl:hover:relative xl:hover:before:absolute xl:hover:before:-left-2 xl:hover:before:top-[-2.125rem] xl:hover:before:h-1 xl:hover:before:w-[4.25rem] xl:hover:before:bg-[#419EBB]"
+          >mars</a
+        >
+      </li>
+      <li class="">
+        <a
+          href="/jupiter"
+          class="font-League Spartan ransition-all cursor-pointer text-[0.6875rem] font-bold uppercase leading-[1.5625rem] tracking-[0.0625rem] text-[#fff] duration-500 ease-linear xl:hover:relative xl:hover:before:absolute xl:hover:before:-left-2 xl:hover:before:top-[-2.125rem] xl:hover:before:h-1 xl:hover:before:w-[4.25rem] xl:hover:before:bg-[#419EBB]"
+          >jupiter</a
+        >
+      </li>
+      <li class="">
+        <a
+          href="/saturn"
+          class="font-League Spartan ransition-all cursor-pointer text-[0.6875rem] font-bold uppercase leading-[1.5625rem] tracking-[0.0625rem] text-[#fff] duration-500 ease-linear xl:hover:relative xl:hover:before:absolute xl:hover:before:-left-2 xl:hover:before:top-[-2.125rem] xl:hover:before:h-1 xl:hover:before:w-[4.25rem] xl:hover:before:bg-[#419EBB]"
+          >saturn</a
+        >
+      </li>
+      <li class="">
+        <a
+          href="/uranus"
+          class="font-League Spartan ransition-all cursor-pointer text-[0.6875rem] font-bold uppercase leading-[1.5625rem] tracking-[0.0625rem] text-[#fff] duration-500 ease-linear xl:hover:relative xl:hover:before:absolute xl:hover:before:-left-2 xl:hover:before:top-[-2.125rem] xl:hover:before:h-1 xl:hover:before:w-[4.25rem] xl:hover:before:bg-[#419EBB]"
+          >uranus</a
+        >
+      </li>
+      <li class="">
+        <a
+          href="/neptune"
+          class="font-League Spartan ransition-all cursor-pointer text-[0.6875rem] font-bold uppercase leading-[1.5625rem] tracking-[0.0625rem] text-[#fff] duration-500 ease-linear xl:hover:relative xl:hover:before:absolute xl:hover:before:-left-2 xl:hover:before:top-[-2.125rem] xl:hover:before:h-1 xl:hover:before:w-[4.25rem] xl:hover:before:bg-[#419EBB]"
+          >neptune</a
+        >
+      </li>
+    </ul>
+  </nav>
+</header>
+<script is:inline>
+  const openMenu = document.getElementById("openMenu");
+  const menuBar = document.getElementById("menuBar");
+  openMenu.addEventListener("click", () => {
+    menuBar.classList.toggle("hidden");
+  });
+</script>
