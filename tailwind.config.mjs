@@ -10,7 +10,7 @@ module.exports = {
   prefix: "",
   theme: {
     fontFamily: {
-      "League Spartan": ["League Spartan", "sans-serif"],
+      "League-Spartan": ["League Spartan", "sans-serif"],
       Antonio: ["Antonio", "sans-serif"],
     },
     extend: {},
