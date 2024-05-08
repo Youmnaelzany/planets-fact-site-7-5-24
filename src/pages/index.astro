@@ -8,51 +8,71 @@ import "@/styles/globals.css";
   <!-- THE HEADER -->
   <Header />
   <main>
-    <section class="">
+    <section
+      class="flex flex-col xl:ml-[20.94rem] xl:flex-row xl:gap-[16.3rem]"
+    >
       <!-- OVERVIEW , STRUCTURE & SURFACE FOR TABLET & DESKTOP-->
       <div
-        class="relative my-8 flex items-center justify-between gap-[2.69rem] px-6 after:absolute after:-bottom-4 after:left-0 after:mx-0 after:h-[0.0625rem] after:w-full after:bg-[#fff] after:opacity-20 md:max-2xl:hidden"
+        class="relative mb-8 mt-4 flex items-center justify-between gap-[2.69rem] px-6 after:absolute after:-bottom-4 after:left-0 after:mx-0 after:h-[0.0625rem] after:w-full after:bg-[#fff] after:opacity-20 md:max-2xl:hidden"
       >
         <button
           type="button"
-          class="font-League-Spartan relative text-[0.5625rem] font-bold uppercase leading-normal tracking-[0.12056rem] text-[#fff] opacity-50 transition-all duration-500 ease-linear active:opacity-0 active:after:-bottom-[1.06rem] active:after:h-1 active:after:w-20 active:after:bg-[#419EBB]"
+          class="overViewBtn font-League-Spartan relative text-[0.5625rem] font-bold uppercase leading-normal tracking-[0.12056rem] text-[#fff] opacity-50 transition-all duration-500 ease-linear active:opacity-0 active:after:-bottom-[1.06rem] active:after:h-1 active:after:w-20 active:after:bg-[#419EBB]"
           >OVERVIEW</button
         >
         <button
           type="button"
-          class="font-League-Spartan text-[0.5625rem] font-bold uppercase leading-normal tracking-[0.12056rem] text-[#fff] opacity-50 transition-all duration-500 ease-linear active:opacity-0"
+          class="structureBtn font-League-Spartan text-[0.5625rem] font-bold uppercase leading-normal tracking-[0.12056rem] text-[#fff] opacity-50 transition-all duration-500 ease-linear active:opacity-0"
           >Structure</button
         >
         <button
           type="button"
-          class="font-League-Spartan text-[0.5625rem] font-bold uppercase leading-normal tracking-[0.12056rem] text-[#fff] opacity-50 transition-all duration-500 ease-linear active:opacity-0"
+          class="surfaceBtn font-League-Spartan text-[0.5625rem] font-bold uppercase leading-normal tracking-[0.12056rem] text-[#fff] opacity-50 transition-all duration-500 ease-linear active:opacity-0"
           >Surface
         </button>
       </div>
       <!-- PLANET IMAGE -->
-      <div class="mt-[5.94rem] flex items-center justify-center">
+      <div class="relative mt-[5.94rem] flex items-center justify-center">
         <img
+          id="overview"
           src="/images/planet-mercury.svg"
           alt="lanet-mercury.svg"
           class="size-[6.9375rem] md:size-[11.5rem] xl:size-[18.125rem]"
         />
+        <img
+          src="/images/planet-mercury-internal.svg"
+          alt="planet-mercury.svg"
+          id="internal"
+          class="hidden size-[6.9375rem] md:size-[11.5rem] xl:size-[18.125rem]"
+        />
+        <img
+          src="/public/images/geology-mercury.png"
+          alt=""
+          id="geology"
+          class="absolute bottom-[-3.313rem] hidden h-[4.875rem] w-[3.875rem] md:bottom-[-4.313rem] md:h-[6.875rem] md:w-[5.875rem] xl:bottom-[-0.313rem] xl:h-[10.3125rem] xl:w-[9.875rem]"
+        />
       </div>
       <!-- PLANET NAME & MORE DESCRIPTION -->
-      <div class="mx-6 mt-[6.12rem]">
+      <div
+        class="mx-6 mt-[6.12rem] md:ml-[2.44rem] md:mr-10 md:flex md:items-center md:justify-between md:gap-[4.31rem] xl:flex-col xl:items-start xl:gap-4"
+      >
         <!--  PLANET NAME & DESCRIPTION  -->
         <div
-          class="flex flex-col items-center justify-center gap-8 text-center"
+          class="flex flex-col items-center justify-center gap-8 text-center md:max-2xl:items-start md:max-2xl:text-left xl:gap-6"
         >
-          <div class="flex flex-col items-center justify-center gap-4">
+          <div
+            class="flex flex-col items-center justify-center gap-4 md:gap-6 md:max-2xl:items-start xl:gap-[1.44rem]"
+          >
             <!-- THE NAME -->
             <h1
-              class="font-Antonio text-[2.5rem] font-normal uppercase leading-normal text-[#fff]"
+              class="font-Antonio text-[2.5rem] font-normal uppercase leading-normal text-[#fff] md:text-5xl xl:text-[5rem]"
             >
               mercury
             </h1>
-            <!-- THE DESCRIPTION -->
+            <!-- PARAGRAPH OVERVIEW -->
             <p
-              class="font-League-Spartan w-[20.4375rem] text-sm font-normal leading-[1.375rem] text-[#fff]"
+              id="paragraphOverview"
+              class="font-League-Spartan w-[20.4375rem] text-sm font-normal leading-[1.375rem] text-[#fff] md:w-[21.1875rem] xl:w-[21.875rem] xl:text-sm xl:leading-[1.5625rem]"
             >
               Mercury is the smallest planet in the Solar System and the closest
               to the Sun. Its orbit around the Sun takes 87.97 Earth days, the
@@ -60,25 +80,87 @@ import "@/styles/globals.css";
               terrestrial planets in the Solar System, and is a rocky body like
               Earth.
             </p>
+            <!-- PARAGRAPH INTERNAL -->
+            <p
+              id="paragraphInternal"
+              class="font-League-Spartan hidden w-[20.4375rem] text-sm font-normal leading-[1.375rem] text-[#fff] md:w-[21.1875rem] xl:w-[21.875rem] xl:text-sm xl:leading-[1.5625rem]"
+            >
+              Mercury appears to have a solid silicate crust and mantle
+              overlying a solid, iron sulfide outer core layer, a deeper liquid
+              core layer, and a solid inner core. The planet's density is the
+              second highest in the Solar System at 5.427 g/cm3 , only slightly
+              less than Earth's density.
+            </p>
+            <!-- PARAGRAPH SURFACE -->
+            <p
+              id="paragraphSurface"
+              class="font-League-Spartan hidden w-[20.4375rem] text-sm font-normal leading-[1.375rem] text-[#fff] md:w-[21.1875rem] xl:w-[21.875rem] xl:text-sm xl:leading-[1.5625rem]"
+            >
+              Mercury's surface is similar in appearance to that of the Moon,
+              showing extensive mare-like plains and heavy cratering, indicating
+              that it has been geologically inactive for billions of years. It
+              is more heterogeneous than either Mars's or the Moon’s.
+            </p>
           </div>
           <!-- SOURCE LINK WKIPEDIA -->
           <div class="flex items-center justify-between gap-1">
             <h3
-              class="font-League-Spartan text-xs font-normal leading-[1.5625rem] text-[#fff] opacity-50"
+              class="font-League-Spartan text-xs font-normal leading-[1.5625rem] text-[#fff] opacity-50 xl:text-sm"
             >
               Source :
             </h3>
             <a
-              href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology "
-              class="font-League-Spartan flex cursor-pointer items-center gap-1 text-xs font-bold leading-[1.5625rem] text-[#fff] underline opacity-50"
+              id="wikipediaOverview"
+              href="https://en.wikipedia.org/wiki/Mercury_(planet)"
+              class="font-League-Spartan flex cursor-pointer items-center gap-1 text-xs font-bold leading-[1.5625rem] text-[#fff] underline opacity-50 xl:text-sm"
             >
               Wikipedia
-              <img src="/images/icon-source.svg" alt="" class="" />
+              <img src="/images/icon-source.svg" alt="arrow" class="" />
+            </a>
+            <a
+              id="wikipediaInternal"
+              href="https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure"
+              class="font-League-Spartan flex hidden cursor-pointer items-center gap-1 text-xs font-bold leading-[1.5625rem] text-[#fff] underline opacity-50 xl:text-sm"
+            >
+              Wikipedia
+              <img src="/images/icon-source.svg" alt="arrow" class="" />
+            </a>
+            <a
+              id="wikipediaSurface"
+              href="https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology"
+              class="font-League-Spartan flex hidden cursor-pointer items-center gap-1 text-xs font-bold leading-[1.5625rem] text-[#fff] underline opacity-50 xl:text-sm"
+            >
+              Wikipedia
+              <img src="/images/icon-source.svg" alt="arrow" class="" />
             </a>
           </div>
         </div>
         <!-- OVERVIEW , STRUCTURE & SURFACE FOR TABLET & DESKTOP-->
-        <div class="hidden md:max-2xl:flex"></div>
+        <div
+          class="hidden md:flex-col md:gap-4 md:max-2xl:flex xl:mt-[2.44rem]"
+        >
+          <!-- OVERVIEW -->
+          <button
+            type="button"
+            class="overViewBtn flex h-10 w-[17.5625rem] items-start border border-solid border-[#fff] border-opacity-20 pb-[0.44rem] pl-5 pt-2 text-[0.5625rem] font-bold uppercase leading-[1.5625rem] tracking-[0.12056rem] text-[#fff] active:border-none active:bg-[#419EBB] xl:max-h-14 xl:w-[21.875rem] xl:pb-[0.69rem] xl:pl-7 xl:pt-3 xl:text-xs xl:tracking-[0.16069rem]"
+          >
+            <span class="mr-[0.88rem] opacity-50 xl:mr-7">01</span> OVERVIEW
+          </button>
+          <!-- Internal Structure -->
+          <button
+            type="button"
+            class="structureBtn flex h-10 w-[17.5625rem] items-start border border-solid border-[#fff] border-opacity-20 pb-[0.44rem] pl-5 pt-2 text-[0.5625rem] font-bold uppercase leading-[1.5625rem] tracking-[0.12056rem] text-[#fff] active:border-none active:bg-[#419EBB] xl:max-h-14 xl:w-[21.875rem] xl:pb-[0.69rem] xl:pl-7 xl:pt-3 xl:text-xs xl:tracking-[0.16069rem]"
+          >
+            <span class="mr-[0.88rem] opacity-50 xl:mr-7">02</span> Internal Structure
+          </button>
+          <!-- Surface Geology -->
+          <button
+            type="button"
+            class="surfaceBtn flex h-10 w-[17.5625rem] items-start border border-solid border-[#fff] border-opacity-20 pb-[0.44rem] pl-5 pt-2 text-[0.5625rem] font-bold uppercase leading-[1.5625rem] tracking-[0.12056rem] text-[#fff] active:border-none active:bg-[#419EBB] xl:max-h-14 xl:w-[21.875rem] xl:pb-[0.69rem] xl:pl-7 xl:pt-3 xl:text-xs xl:tracking-[0.16069rem]"
+          >
+            <span class="mr-[0.88rem] opacity-50 xl:mr-7">03</span> Surface Geology
+          </button>
+        </div>
       </div>
     </section>
     <!-- PLANET DATA -->
@@ -150,3 +232,29 @@ import "@/styles/globals.css";
 
   <style></style>
 </Layout>
+
+<script is:inline>
+  // BUTTONS
+  const overViewBtn = document.querySelectorAll(".overViewBtn");
+  const structureBtn = document.querySelectorAll(".structureBtn");
+  const surfaceBtn = document.querySelectorAll(".surfaceBtn");
+  // IMAGES
+  const internal = document.querySelectorAll("#internal");
+  const geology = document.querySelectorAll("#geology");
+  const overview = document.querySelector("#overview");
+  // WIKIPEDIA
+  const wikipediaOverview = document.querySelector("#wikipediaOverview");
+  const wikipediaInternal = document.querySelector("#wikipediaInternal");
+  const wikipediaSurface = document.querySelector("#wikipediaSurface");
+  // PARAGRAPH
+  const paragraphOverview = document.querySelector("#paragraphOverview");
+  const paragraphInternal = document.querySelector("#paragraphInternal");
+  const paragraphSurface = document.querySelector("#paragraphSurface");
+
+  //  FUNCTIONS
+
+  structureBtn.addEventListener("click", () => {
+    overview.classList.add("hidden");
+    internal.classList.remove("hidden");
+  });
+</script>
